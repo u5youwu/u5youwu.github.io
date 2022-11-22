@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+		main{
+			width:100vw;
+			height:100vh;
+			background:white;
+			display:flex;
+		    flex-direction:row;
+		    justify-content: center;
+		    flex-wrap:wrap;
+		   background-repeat: no-repeat;
+		    background-size:100% 100%;
+		    background-color:rgba(34, 47, 62,0.95);
+		     }
+		#head{
+			background:rgba(84, 160, 255,1.0);
+			width:100vw;
+		        height:15vh;
+		        display:flex;
+		justify-content: center;
+		align-items: center;
+		font-size:4.4em;
+		animation-name: death,dream;
+		animation-duration: 4s;
+		
+		        
+			
+		}
+		#middle{background:rgba(34, 47, 62,1.0);
+		        width:100vw;
+		        height:30vh;
+		        opacity:0.9;
+		        font-size: 4em;
+		        color: white;
+		        align-self:center;
+		        display:flex;
+		      border-radius: 20%;
+		justify-content: center;
+		align-items: center;
+		
+		        animation-name:death,dream,hope;
+		        animation-duration:2s}
+		#bottom{width:100vw;
+		        height:15vh;
+		        opacity:0;
+			background:rgba(84, 160, 255,1.0);
+			align-self:flex-end;
+			display:flex;
+		justify-content: center;
+		align-items: center;
+		font-size:4em;animation-name: death,dream;
+		animation-delay: 2s;
+		animation-duration: 2s;
+		animation-fill-mode: forwards;
+	    
+			
+			
+		}
+		#bottom:hover{
+			background:hotpink;
+		}
+		@keyframes death{
+		from{
+			transform:translateX(-100vw);
+		}
+		to {transform: translateX(0);}
+	}
+	@keyframes hope{
+		from{
+			transform: scale(0) rotate(360deg);
+		}
+		to {
+			transform: scale(1) rotate(0deg); 
+		}
+	}
+	@keyframes dream{
+		from{
+			opacity: 0;
+		}
+		to{opacity: 1;
+			
+		}
+	}
+		</style>
+	</head>
+	<body>
+		<main>
+			<div id="head">第五届化妆大赛</div>
+			<div id="middle">报名的人随报名依据在现场参加比赛！报名依据将在报名日期截止前前一天以邮箱告知。</div>
+			<div id="bottom">取消报名</div>
+		
+		<script type="text/javascript">
+		function a(){ if(window.confirm('你确定要取消报名吗吗？取消报名后将无法更改！')){
+            //这里填写提交代码
+            alert("取消报名成功！")
+            return true;
+         }else{
+          //  这里填写不提交代码
+          alert("啊...骗子！")
+            return false;};bottom.removeEventListener('click',a)}
+			bottom.addEventListener('click',a);
+			
+			
+		</script></main>
+	</body>
+</html>
